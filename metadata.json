@@ -1,0 +1,6 @@
+{
+  "name": "FahisBrownieBee",
+  "description": "Elite Online Micro-Patisserie. Taste The Heaven. 100% Eggless, boutique batches, shipped pan-India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

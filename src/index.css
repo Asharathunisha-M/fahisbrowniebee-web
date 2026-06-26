@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-gold-50: #fefcf3;
+  --color-gold-100: #fdf6df;
+  --color-gold-200: #fbf0be;
+  --color-gold-300: #f6dc8c;
+  --color-gold-400: #ecc255;
+  --color-gold-500: #D4AF37;
+  --color-gold-600: #b89128;
+  --color-gold-700: #93701f;
+  --color-gold-800: #74571e;
+  --color-gold-900: #60471c;
+  --color-gold-950: #37260c;
+  
+  --color-espresso-50: #faf7f5;
+  --color-espresso-100: #f3eae6;
+  --color-espresso-200: #e6d4cc;
+  --color-espresso-300: #d1b5a9;
+  --color-espresso-400: #b88f7e;
+  --color-espresso-500: #a1705e;
+  --color-espresso-600: #905d4d;
+  --color-espresso-700: #784b3d;
+  --color-espresso-800: #644034;
+  --color-espresso-900: #2a150f;
+  --color-espresso-950: #0c0604;
+  --color-espresso-black: #050201;
+}
+
+/* Custom Scrollbar for Luxury Dark Mode */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050201;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a150f;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Shimmer background effect */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg, #D4AF37 0%, #FFF5D1 50%, #D4AF37 100%);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+
+/* Custom Glassmorphism styles */
+.glass-panel {
+  background: rgba(12, 6, 4, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(23, 13, 10, 0.85);
+  border-color: rgba(212, 175, 55, 0.35);
+  box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.15);
+}
+
+/* Premium radial gradient backdrop */
+.gold-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+}
+
+.gold-glow-large {
+  background: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 80%);
+}
